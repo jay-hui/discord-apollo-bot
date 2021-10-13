@@ -1,0 +1,25 @@
+{
+  "name": "lyre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "@distube/youtube-dl": "^1.0.2",
+    "@distube/ytdl": "^1.0.7",
+    "@distube/ytpl": "^1.0.11",
+    "@distube/ytsr": "^1.0.8",
+    "discord.js": "^12.5.1",
+    "distube": "^2.8.8",
+    "ffmpeg-static": "^4.2.7",
+    "i": "^0.3.7",
+    "npm": "^6.14.11",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
