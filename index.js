@@ -10,11 +10,8 @@ client.distube = new DisTube(client, {
 });
 const distube = client.distube;
 
-// Queue status template
-
 const status = (queue) => `volume: \`${queue.volume}%\``;
 // const status = (queue) => `volume: \`${queue.volume}%\` | filter: \`${queue.filter || "off"}\` | loop: \`${queue.repeatMode ? queue.repeatMode == 2 ? "queue" : "this song" : "off"}\` | autoplay: \`${queue.autoplay ? "on" : "off"}\``;
-
 // DisTube event listeners, more in the documentation page
 distube
     .on("playSong", (message, queue, song) => {
