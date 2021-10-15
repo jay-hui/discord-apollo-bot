@@ -2,7 +2,12 @@ const Discord = require('discord.js'),
     client = new Discord.Client(),
     DisTube = require('distube'),
     { loadCommands } = require('./utils/loadCommands');
-client.distube = new DisTube(client, { searchSongs: true, emitNewSongOnly: true });
+client.distube = new DisTube(client, {
+    searchSongs: true,
+    emitNewSongOnly: true,
+    leaveOnFinish: true,
+    leaveOnStop: true
+});
 const distube = client.distube;
 
 // Queue status template
