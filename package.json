@@ -9,7 +9,7 @@
     "@distube/ytdl": "^1.0.7",
     "@distube/ytpl": "^1.0.11",
     "@distube/ytsr": "^1.0.8",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "distube": "^2.8.8",
     "ffmpeg-static": "^4.2.7",
     "i": "^0.3.7",
