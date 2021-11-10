@@ -6,6 +6,6 @@ cmd = async (client, message) => {
 
 module.exports = {
     name: "skip",
-    aliases: [],
+    aliases: ['s'],
     run: cmd
 }
