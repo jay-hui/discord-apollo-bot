@@ -3,7 +3,7 @@ const Discord = require('discord.js'),
     DisTube = require('distube'),
     { loadCommands } = require('./utils/loadCommands');
 client.distube = new DisTube(client, {
-    searchSongs: true,
+    searchSongs: 5,
     emitNewSongOnly: true,
     leaveOnFinish: true,
     leaveOnStop: true
@@ -29,8 +29,7 @@ distube
         `added \`${playlist.name}\` playlist (${playlist.songs.length} songs) to queue\n${status(queue)}`
     ))
     .on("searchResult", (message, result) => {
-        let i = 0;
-        message.channel.send(`**which song do u wanna listen to? (type the number)**\n${result.slice(0, 5).map(song => `**${++i}**. ${song.name} - \`${song.formattedDuration}\``).join("\n")}\n*enter anything else or wait 60 seconds to cancel*`);
+        message.channel.send(`**which song do u wanna listen to? (type the number)**\n${result.slice(0, 5).map((song, index) => `**${index + 1}**. ${song.name} - \`${song.formattedDuration}\``).join("\n")}\n*enter anything else or wait 60 seconds to cancel*`);
     })
     .on("searchCancel", (message) => message.channel.send(`search cancelled`))
     .on("error", (message, e) => {
